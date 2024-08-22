@@ -25,7 +25,7 @@ pnpm install
 pnpm dev
 ```
 
-This will start the Electron app with React. You can now start developing your app.
+This will start the Electron app. You can now start developing your app.
 
 ### Other Templates
 

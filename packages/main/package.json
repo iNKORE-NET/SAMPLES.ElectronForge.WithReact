@@ -1,6 +1,6 @@
 {
-    "name": "sample-electron-forge-react",
-    "productName": "iNKORE's Electron-Forge + React Sample",
+    "name": "sample-electron-forge",
+    "productName": "iNKORE's Electron-Forge + Vaniall JS Sample",
     "version": "1.0.0",
     "description": "My Electron application description",
     "main": ".webpack/main",
