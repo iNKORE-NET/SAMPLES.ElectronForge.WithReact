@@ -40,11 +40,9 @@ const config: ForgeConfig =
                 [
                     {
                         html: "./source/index.html",
-                        js: "./source/renderer.ts",
+                        js: "./source/index.ts",
                         name: "main_window",
-                        preload: {
-                            js: "./source/preload.ts",
-                        },
+                        preload: { js: "./shell/preload.ts" },
                     },
                 ],
             },

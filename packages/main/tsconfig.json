@@ -1,5 +1,6 @@
 {
-    "compilerOptions": {
+    "compilerOptions":
+    {
         "target": "ES6",
         "allowJs": true,
         "module": "commonjs",
@@ -11,9 +12,10 @@
         "outDir": "dist",
         "moduleResolution": "node",
         "resolveJsonModule": true,
-        "paths": {
+        "paths":
+        {
             "*": [ "node_modules/*" ]
         }
     },
-    "include": [ "source/**/*" ]
+    "include": [ "source/**/*", "shell/main.ts", "shell/preload.ts", "source/index.ts" ]
 }

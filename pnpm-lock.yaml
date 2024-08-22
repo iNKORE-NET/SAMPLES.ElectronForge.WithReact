@@ -41,6 +41,9 @@ importers:
       '@electron/fuses':
         specifier: ^1.8.0
         version: 1.8.0
+      '@types/node':
+        specifier: ^22.5.0
+        version: 22.5.0
       '@typescript-eslint/eslint-plugin':
         specifier: ^5.62.0
         version: 5.62.0(@typescript-eslint/parser@5.62.0(eslint@8.57.0)(typescript@4.5.5))(eslint@8.57.0)(typescript@4.5.5)
@@ -48,11 +51,11 @@ importers:
         specifier: ^5.62.0
         version: 5.62.0(eslint@8.57.0)(typescript@4.5.5)
       '@vercel/webpack-asset-relocator-loader':
-        specifier: ^1.7.3
+        specifier: 1.7.3
         version: 1.7.3
       css-loader:
         specifier: ^6.11.0
-        version: 6.11.0(webpack@5.93.0)
+        version: 6.11.0(webpack@5.94.0)
       electron:
         specifier: 32.0.1
         version: 32.0.1
@@ -64,16 +67,16 @@ importers:
         version: 2.29.1(@typescript-eslint/parser@5.62.0(eslint@8.57.0)(typescript@4.5.5))(eslint@8.57.0)
       fork-ts-checker-webpack-plugin:
         specifier: ^7.3.0
-        version: 7.3.0(typescript@4.5.5)(webpack@5.93.0)
+        version: 7.3.0(typescript@4.5.5)(webpack@5.94.0)
       node-loader:
         specifier: ^2.0.0
-        version: 2.0.0(webpack@5.93.0)
+        version: 2.0.0(webpack@5.94.0)
       style-loader:
         specifier: ^3.3.4
-        version: 3.3.4(webpack@5.93.0)
+        version: 3.3.4(webpack@5.94.0)
       ts-loader:
         specifier: ^9.5.1
-        version: 9.5.1(typescript@4.5.5)(webpack@5.93.0)
+        version: 9.5.1(typescript@4.5.5)(webpack@5.94.0)
       ts-node:
         specifier: ^10.9.2
         version: 10.9.2(@types/node@22.5.0)(typescript@4.5.5)
@@ -359,12 +362,6 @@ packages:
 
   '@types/connect@3.4.38':
     resolution: {integrity: sha512-K6uROf1LD88uDQqJCktA4yzL1YYAK6NgfsI0v/mTgyPKWsX1CnJ0XPSDhViejru1GcRkLWb8RlzFYJRqGUbaug==}
-
-  '@types/eslint-scope@3.7.7':
-    resolution: {integrity: sha512-MzMFlSLBqNF2gcHWO0G1vP/YQyfvrxZ0bF+u7mzUdZ1/xK4A4sru+nraZz5i3iEIk1l1uyicaDVTB4QbbEkAYg==}
-
-  '@types/eslint@9.6.0':
-    resolution: {integrity: sha512-gi6WQJ7cHRgZxtkQEoyHMppPjq9Kxo5Tjn2prSKDSmZrCz8TZ3jSRCeTJm+WoM+oB0WG37bRqLzaaU3q7JypGg==}
 
   '@types/estree@1.0.5':
     resolution: {integrity: sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==}
@@ -2153,6 +2150,10 @@ packages:
     resolution: {integrity: sha512-sPU4uV7dYlvtWJxwwxHD0PuihVNiE7TyAbQ5SWxDCB9mUYvOgroQOwYQQOKPJ8CIbE+1ETVlOoK1UC2nU3gYvg==}
     engines: {node: '>= 0.6'}
 
+  mime-db@1.53.0:
+    resolution: {integrity: sha512-oHlN/w+3MQ3rba9rqFr6V/ypF10LSkdwUysQL7GkXoTgIWeV+tcXGA852TBxH+gsh8UWoyhR1hKcoMJTuWflpg==}
+    engines: {node: '>= 0.6'}
+
   mime-types@2.1.35:
     resolution: {integrity: sha512-ZDY+bPm5zTTF+YpCrAU9nK0UgICYPT0QtT1NZWFv4s++TNkcgVaT0g6+4R2uI4MjQjzysHB1zxuWL50hzaeXiw==}
     engines: {node: '>= 0.6'}
@@ -3268,8 +3269,8 @@ packages:
     resolution: {integrity: sha512-/DyMEOrDgLKKIG0fmvtz+4dUX/3Ghozwgm6iPp8KRhvn+eQf9+Q7GWxVNMk3+uCPWfdXYC4ExGBckIXdFEfH1w==}
     engines: {node: '>=10.13.0'}
 
-  webpack@5.93.0:
-    resolution: {integrity: sha512-Y0m5oEY1LRuwly578VqluorkXbvXKh7U3rLoQCEO04M97ScRr44afGVkI0FQFsXzysk5OgFAxjZAb9rsGQVihA==}
+  webpack@5.94.0:
+    resolution: {integrity: sha512-KcsGn50VT+06JH/iunZJedYGUJS5FGjow8wb9c0v5n1Om8O1g4L6LjtfxwlXIATopoQu+vOXXa7gYisWxCoPyg==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     peerDependencies:
@@ -3592,10 +3593,10 @@ snapshots:
       debug: 4.3.6
       fast-glob: 3.3.2
       fs-extra: 10.1.0
-      html-webpack-plugin: 5.6.0(webpack@5.93.0)
+      html-webpack-plugin: 5.6.0(webpack@5.94.0)
       listr2: 7.0.2
-      webpack: 5.93.0
-      webpack-dev-server: 4.15.2(debug@4.3.6)(webpack@5.93.0)
+      webpack: 5.94.0
+      webpack-dev-server: 4.15.2(debug@4.3.6)(webpack@5.94.0)
       webpack-merge: 5.10.0
     transitivePeerDependencies:
       - '@rspack/core'
@@ -3950,16 +3951,6 @@ snapshots:
   '@types/connect@3.4.38':
     dependencies:
       '@types/node': 22.5.0
-
-  '@types/eslint-scope@3.7.7':
-    dependencies:
-      '@types/eslint': 9.6.0
-      '@types/estree': 1.0.5
-
-  '@types/eslint@9.6.0':
-    dependencies:
-      '@types/estree': 1.0.5
-      '@types/json-schema': 7.0.15
 
   '@types/estree@1.0.5': {}
 
@@ -4642,7 +4633,7 @@ snapshots:
 
   compressible@2.0.18:
     dependencies:
-      mime-db: 1.52.0
+      mime-db: 1.53.0
 
   compression@1.7.4:
     dependencies:
@@ -4702,7 +4693,7 @@ snapshots:
 
   cross-zip@4.0.1: {}
 
-  css-loader@6.11.0(webpack@5.93.0):
+  css-loader@6.11.0(webpack@5.94.0):
     dependencies:
       icss-utils: 5.1.0(postcss@8.4.41)
       postcss: 8.4.41
@@ -4713,7 +4704,7 @@ snapshots:
       postcss-value-parser: 4.2.0
       semver: 7.6.3
     optionalDependencies:
-      webpack: 5.93.0
+      webpack: 5.94.0
 
   css-select@4.3.0:
     dependencies:
@@ -5353,7 +5344,7 @@ snapshots:
     dependencies:
       is-callable: 1.2.7
 
-  fork-ts-checker-webpack-plugin@7.3.0(typescript@4.5.5)(webpack@5.93.0):
+  fork-ts-checker-webpack-plugin@7.3.0(typescript@4.5.5)(webpack@5.94.0):
     dependencies:
       '@babel/code-frame': 7.24.7
       chalk: 4.1.2
@@ -5368,7 +5359,7 @@ snapshots:
       semver: 7.6.3
       tapable: 2.2.1
       typescript: 4.5.5
-      webpack: 5.93.0
+      webpack: 5.94.0
 
   forwarded@0.2.0: {}
 
@@ -5639,7 +5630,7 @@ snapshots:
       relateurl: 0.2.7
       terser: 5.31.6
 
-  html-webpack-plugin@5.6.0(webpack@5.93.0):
+  html-webpack-plugin@5.6.0(webpack@5.94.0):
     dependencies:
       '@types/html-minifier-terser': 6.1.0
       html-minifier-terser: 6.1.0
@@ -5647,7 +5638,7 @@ snapshots:
       pretty-error: 4.0.0
       tapable: 2.2.1
     optionalDependencies:
-      webpack: 5.93.0
+      webpack: 5.94.0
 
   htmlparser2@6.1.0:
     dependencies:
@@ -6079,6 +6070,8 @@ snapshots:
 
   mime-db@1.52.0: {}
 
+  mime-db@1.53.0: {}
+
   mime-types@2.1.35:
     dependencies:
       mime-db: 1.52.0
@@ -6212,10 +6205,10 @@ snapshots:
       - bluebird
       - supports-color
 
-  node-loader@2.0.0(webpack@5.93.0):
+  node-loader@2.0.0(webpack@5.94.0):
     dependencies:
       loader-utils: 2.0.4
-      webpack: 5.93.0
+      webpack: 5.94.0
 
   node-releases@2.0.18: {}
 
@@ -6955,9 +6948,9 @@ snapshots:
     dependencies:
       escape-string-regexp: 1.0.5
 
-  style-loader@3.3.4(webpack@5.93.0):
+  style-loader@3.3.4(webpack@5.94.0):
     dependencies:
-      webpack: 5.93.0
+      webpack: 5.94.0
 
   sudo-prompt@9.2.1: {}
 
@@ -6998,14 +6991,14 @@ snapshots:
       rimraf: 2.6.3
     optional: true
 
-  terser-webpack-plugin@5.3.10(webpack@5.93.0):
+  terser-webpack-plugin@5.3.10(webpack@5.94.0):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.25
       jest-worker: 27.5.1
       schema-utils: 3.3.0
       serialize-javascript: 6.0.2
       terser: 5.31.6
-      webpack: 5.93.0
+      webpack: 5.94.0
 
   terser@5.31.6:
     dependencies:
@@ -7041,7 +7034,7 @@ snapshots:
     dependencies:
       escape-string-regexp: 1.0.5
 
-  ts-loader@9.5.1(typescript@4.5.5)(webpack@5.93.0):
+  ts-loader@9.5.1(typescript@4.5.5)(webpack@5.94.0):
     dependencies:
       chalk: 4.1.2
       enhanced-resolve: 5.17.1
@@ -7049,7 +7042,7 @@ snapshots:
       semver: 7.6.3
       source-map: 0.7.4
       typescript: 4.5.5
-      webpack: 5.93.0
+      webpack: 5.94.0
 
   ts-node@10.9.2(@types/node@22.5.0)(typescript@4.5.5):
     dependencies:
@@ -7205,16 +7198,16 @@ snapshots:
 
   webidl-conversions@3.0.1: {}
 
-  webpack-dev-middleware@5.3.4(webpack@5.93.0):
+  webpack-dev-middleware@5.3.4(webpack@5.94.0):
     dependencies:
       colorette: 2.0.20
       memfs: 3.5.3
       mime-types: 2.1.35
       range-parser: 1.2.1
       schema-utils: 4.2.0
-      webpack: 5.93.0
+      webpack: 5.94.0
 
-  webpack-dev-server@4.15.2(debug@4.3.6)(webpack@5.93.0):
+  webpack-dev-server@4.15.2(debug@4.3.6)(webpack@5.94.0):
     dependencies:
       '@types/bonjour': 3.5.13
       '@types/connect-history-api-fallback': 1.5.4
@@ -7244,10 +7237,10 @@ snapshots:
       serve-index: 1.9.1
       sockjs: 0.3.24
       spdy: 4.0.2
-      webpack-dev-middleware: 5.3.4(webpack@5.93.0)
+      webpack-dev-middleware: 5.3.4(webpack@5.94.0)
       ws: 8.18.0
     optionalDependencies:
-      webpack: 5.93.0
+      webpack: 5.94.0
     transitivePeerDependencies:
       - bufferutil
       - debug
@@ -7262,9 +7255,8 @@ snapshots:
 
   webpack-sources@3.2.3: {}
 
-  webpack@5.93.0:
+  webpack@5.94.0:
     dependencies:
-      '@types/eslint-scope': 3.7.7
       '@types/estree': 1.0.5
       '@webassemblyjs/ast': 1.12.1
       '@webassemblyjs/wasm-edit': 1.12.1
@@ -7285,7 +7277,7 @@ snapshots:
       neo-async: 2.6.2
       schema-utils: 3.3.0
       tapable: 2.2.1
-      terser-webpack-plugin: 5.3.10(webpack@5.93.0)
+      terser-webpack-plugin: 5.3.10(webpack@5.94.0)
       watchpack: 2.4.2
       webpack-sources: 3.2.3
     transitivePeerDependencies:
