@@ -1,4 +1,4 @@
-# ElectronForge kickstarter
+# Electron-Forge Starter-Kit
 
 This is a simple project to get you started with Electron. It uses Electron Forge to manage the Electron app and vanilla JavaScript for the main interface.
 
@@ -27,6 +27,6 @@ pnpm dev
 
 This will start the Electron app. You can now start developing your app.
 
-### Other Templates
+## Other Templates
 
-- For a React app with Electron, please check [STARTER.ElectronForge.WithReact](https://github.com/iNKORE-NET/STARTER.ElectronForge.WithReact)
+- For a React app with Electron-Forge, please check [STARTER.ElectronForge.WithReact](https://github.com/iNKORE-NET/STARTER.ElectronForge.WithReact)
