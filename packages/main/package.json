@@ -1,5 +1,5 @@
 {
-    "name": "@inkore/sample-electron-forge-react",
+    "name": "sample-electron-forge-react",
     "productName": "iNKORE's Electron-Forge + React Sample",
     "version": "1.0.0",
     "description": "My Electron application description",
