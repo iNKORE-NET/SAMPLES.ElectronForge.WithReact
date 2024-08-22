@@ -1,3 +1,8 @@
+# ⚠️ WORK IN PROGRESS
+
+---
+
+
 # ElectronForge with React kickstarter
 
 This is a simple project to get you started with Electron and React. It uses Electron Forge to manage the Electron app and React for the UI.
