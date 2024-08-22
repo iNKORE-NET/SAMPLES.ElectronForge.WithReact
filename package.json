@@ -1,9 +1,13 @@
 {
-  "name": "@inkore/appruntime-windows-workspace",
-  "private": true,
-  "version": "1.0.0",
-  "description": "",
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+    "name": "@inkore/.workspace-current",
+    "private": true,
+    "version": "1.0.0",
+    "description": "",
+    "keywords": [ ],
+    "author":
+    {
+        "name": "Yoojun Zhou",
+        "email": "hereisnotyoojun@outlook.com"
+    },
+    "license": "MIT"
 }

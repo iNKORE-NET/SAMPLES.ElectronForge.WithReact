@@ -12,6 +12,10 @@
         "publish": "electron-forge publish",
         "lint": "eslint --ext .ts,.tsx ."
     },
+    "dependencies":
+    {
+        "electron-squirrel-startup": "^1.0.1"
+    },
     "devDependencies":
     {
         "@electron-forge/cli": "^7.4.0",
@@ -43,9 +47,5 @@
         "name": "Yoojun Zhou",
         "email": "hereisnotyoojun@outlook.com"
     },
-    "license": "MIT",
-    "dependencies":
-    {
-        "electron-squirrel-startup": "^1.0.1"
-    }
+    "license": "MIT"
 }
