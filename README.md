@@ -1,11 +1,6 @@
-# ⚠️ WORK IN PROGRESS
+# ElectronForge kickstarter
 
----
-
-
-# ElectronForge with React kickstarter
-
-This is a simple project to get you started with Electron and React. It uses Electron Forge to manage the Electron app and React for the UI.
+This is a simple project to get you started with Electron. It uses Electron Forge to manage the Electron app and vanilla JavaScript for the main interface.
 
 All the technologies used in this project are:
 
@@ -13,15 +8,13 @@ All the technologies used in this project are:
 
 - [Electron Forge](https://www.electronforge.io/)
 
-- [React.js](https://reactjs.org/)
-
 - [Webpack](https://webpack.js.org/)
 
 - [TypeScript](https://www.typescriptlang.org/)
 
 - [PNPM](https://pnpm.io/)
 
-## Getting started
+## Getting Started
 
 To get started with this project, you click the "Use this template" button on the top right of this page or click [here](https://github.com/new?template_name=SAMPLES.ElectronForge.WithReact&template_owner=iNKORE-NET). This will create a new repository with the same structure as this one.
 
@@ -33,3 +26,7 @@ pnpm dev
 ```
 
 This will start the Electron app with React. You can now start developing your app.
+
+### Other Templates
+
+- For a React app with Electron, please check [STARTER.ElectronForge.WithReact](https://github.com/iNKORE-NET/STARTER.ElectronForge.WithReact)
