@@ -39,10 +39,10 @@ const config: ForgeConfig =
                 entryPoints: 
                 [
                     {
-                        html: "./source/index.html",
-                        js: "./source/index.ts",
+                        html: "./source/main/index.html",
+                        js: "./source/main/index.ts",
                         name: "main_window",
-                        preload: { js: "./shell/preload.ts" },
+                        preload: { js: "./source/shell/preload.ts" },
                     },
                 ],
             },

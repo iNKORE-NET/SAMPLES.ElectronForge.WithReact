@@ -17,5 +17,5 @@
             "*": [ "node_modules/*" ]
         }
     },
-    "include": [ "source/**/*", "shell/main.ts", "shell/preload.ts", "source/index.ts" ]
+    "include": [ "source/**/*" ]
 }

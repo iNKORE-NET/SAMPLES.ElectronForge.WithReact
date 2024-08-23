@@ -19,7 +19,7 @@ button
     color: white;
     padding: 8px 12px;
 
-    transition: background-color 0.2s, outline 0.2s;
+    transition: background-color 0.2s, outline-width 0.2s;
 }
 
 button:hover
