@@ -20,7 +20,7 @@
         }
     },
     "include": [ "source/**/*" ],
-    "files": [ "source/shell/resources.d.ts" ],
+    "files": [ "source/index.d.ts" ],
     "exclude": [ "node_modules", ".build", ".webpack" ]
 
 }

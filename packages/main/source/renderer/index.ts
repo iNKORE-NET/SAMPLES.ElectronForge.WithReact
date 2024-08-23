@@ -26,7 +26,7 @@
  * ```
  */
 
-import "source/main/index.css";
+// import "source/renderer/index.css";
 import RICK from "public/rick.jpg";
 
 // eslint-disable-next-line no-console
