@@ -1,4 +1,5 @@
 import { app, BrowserWindow, nativeImage } from "electron";
+import { writeFileSync } from "fs";
 import path from "path";
 import ICON from "public/favicon.ico";
 
@@ -15,14 +16,21 @@ if (require("electron-squirrel-startup"))
     app.quit();
 }
 
-const createWindow = (): void => 
+// Get the actual 'public' path
+const WEBPACK_PATH = path.join(app.getAppPath(), ".webpack");
+const ROOT_MAIN = path.join(WEBPACK_PATH, "main");
+const ROOT_RENDERER = path.join(WEBPACK_PATH, "renderer");
+
+app.getPath("module")
+
+const createWindow = async () => 
 {
     // Create the browser window.
     const mainWindow = new BrowserWindow({
         height: 600,
         width: 800,
-        icon: ICON,
-        webPreferences: 
+        icon: path.resolve(ROOT_MAIN, ICON),
+        webPreferences:
         {
             preload: MAIN_WINDOW_PRELOAD_WEBPACK_ENTRY,
             nodeIntegration: true,

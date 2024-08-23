@@ -12,38 +12,38 @@ import { MakerRpm } from "@electron-forge/maker-rpm";
 import { mainConfig } from "./webpack.main.config";
 import { rendererConfig } from "./webpack.renderer.config";
 
-const config: ForgeConfig = 
+const config: ForgeConfig =
 {
-    packagerConfig: 
+    packagerConfig:
     {
         asar: true,
     },
     rebuildConfig: {},
-    makers: 
+    makers:
     [
-        new MakerSquirrel({ }), 
-        new MakerZIP({ }, ["darwin"]),
-        new MakerRpm({ }), 
-        new MakerDeb({ })
+        new MakerSquirrel({}),
+        new MakerZIP({}, ["darwin"]),
+        new MakerRpm({}),
+        new MakerDeb({})
     ],
     outDir: "./.build",
-    plugins: 
+    plugins:
     [
         new AutoUnpackNativesPlugin({}),
         new WebpackPlugin
         ({
             mainConfig,
-            renderer: 
+            renderer:
             {
                 config: rendererConfig,
                 nodeIntegration: true,
-                entryPoints: 
+                entryPoints:
                 [
                     {
                         html: "./source/main/index.html",
                         js: "./source/main/index.ts",
                         name: "main_window",
-                        preload: { js: "./source/shell/preload.ts" },
+                        preload: { js: "./source/main/preload.ts" },
                     },
                 ],
             },

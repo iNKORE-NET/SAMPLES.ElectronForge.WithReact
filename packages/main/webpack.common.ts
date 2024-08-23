@@ -37,6 +37,10 @@ export const rules: Required<ModuleOptions>["rules"] =
     {
         test: /\.(png|jpe?g|gif|svg|ico|woff|woff2|ttf|otf|eot|mp4|webm|mp3|wav|pdf|txt)$/,
         type: "asset/resource",
+        generator:
+        {
+            filename: "assets/[hash][ext][query]",
+        }
     },
 
     {
