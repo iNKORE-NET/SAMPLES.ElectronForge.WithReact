@@ -26,7 +26,8 @@
  * ```
  */
 
-import "./index.css";
+import "source/main/index.css";
+import RICK from "public/rick.jpg";
 
 // eslint-disable-next-line no-console
 console.log("👋 This message is being logged by \"renderer.js\", included via webpack");
@@ -37,3 +38,7 @@ Button_TellYou.addEventListener("click", () =>
 {
     alert("You make the world a much better place!");
 });
+
+const Image_Rick = document.getElementById("rick") as HTMLImageElement;
+// alert(RICK);
+Image_Rick.src = RICK;
