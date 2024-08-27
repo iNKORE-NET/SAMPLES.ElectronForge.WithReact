@@ -14,8 +14,13 @@
         "resolveJsonModule": true,
         "paths":
         {
+            "soruce/*": [ "./source/*" ],
+            "public/*": [ "./public/*" ],
             "*": [ "node_modules/*" ]
         }
     },
-    "include": [ "source/**/*" ]
+    "include": [ "source/**/*" ],
+    "files": [ "source/index.d.ts" ],
+    "exclude": [ "node_modules", ".build", ".webpack" ]
+
 }

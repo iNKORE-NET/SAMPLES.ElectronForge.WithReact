@@ -12,37 +12,55 @@ import { MakerRpm } from "@electron-forge/maker-rpm";
 import { mainConfig } from "./webpack.main.config";
 import { rendererConfig } from "./webpack.renderer.config";
 
-const config: ForgeConfig = 
+const config: ForgeConfig =
 {
-    packagerConfig: 
+    packagerConfig:
     {
         asar: true,
+        name: "Name Slot",
+        icon: "./public/icons/icon-executable",
+        executableName: "name-slot",
+        
+        appVersion: "114.5.14",
+        appBundleId: "come.name.slot",
+        appCategoryType: "public.app-category.developer-tools",
+        appCopyright: "Copyright text here!",
+
+        win32metadata:
+        {
+            CompanyName: "Company Name",
+            FileDescription: "File Description",
+            OriginalFilename: "Original Filename",
+            ProductName: "Product Name",
+            InternalName: "Internal Name",
+        }
     },
     rebuildConfig: {},
-    makers: 
+    makers:
     [
-        new MakerSquirrel({ }), 
-        new MakerZIP({ }, ["darwin"]),
-        new MakerRpm({ }), 
-        new MakerDeb({ })
+        new MakerSquirrel({}),
+        new MakerZIP({}, ["darwin"]),
+        new MakerRpm({}),
+        new MakerDeb({})
     ],
     outDir: "./.build",
-    plugins: 
+    plugins:
     [
         new AutoUnpackNativesPlugin({}),
         new WebpackPlugin
         ({
             mainConfig,
-            renderer: 
+            renderer:
             {
                 config: rendererConfig,
-                entryPoints: 
+                nodeIntegration: true,
+                entryPoints:
                 [
                     {
-                        html: "./source/main/index.html",
-                        js: "./source/main/index.ts",
+                        html: "./source/renderer/index.html",
+                        js: "./source/renderer/index.ts",
                         name: "main_window",
-                        preload: { js: "./source/shell/preload.ts" },
+                        preload: { js: "./source/renderer/preload.ts" },
                     },
                 ],
             },

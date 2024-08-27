@@ -46,3 +46,17 @@ button:active
     opacity: 0.6;
     font-size: 0.8rem;
 }
+
+
+.ricks
+{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.ricks img
+{
+    height: 48px;
+    border-radius: 8px;
+}
