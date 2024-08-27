@@ -17,6 +17,23 @@ const config: ForgeConfig =
     packagerConfig:
     {
         asar: true,
+        name: "Name Slot",
+        icon: "./public/icons/icon-executable",
+        executableName: "name-slot",
+        
+        appVersion: "114.5.14",
+        appBundleId: "come.name.slot",
+        appCategoryType: "public.app-category.developer-tools",
+        appCopyright: "Copyright text here!",
+
+        win32metadata:
+        {
+            CompanyName: "Company Name",
+            FileDescription: "File Description",
+            OriginalFilename: "Original Filename",
+            ProductName: "Product Name",
+            InternalName: "Internal Name",
+        }
     },
     rebuildConfig: {},
     makers:
